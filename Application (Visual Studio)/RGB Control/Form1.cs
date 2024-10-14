@@ -16,7 +16,7 @@ using System.Threading;
 
 namespace RGB_Control
 {
-    public partial class Form1 : Form
+    public partial class form1 : Form
     {
         List<string> portnames = new List<string>();
         Point lastPoint;
@@ -25,7 +25,7 @@ namespace RGB_Control
         bool readstate;
         string monitor;
 
-        public Form1()
+        public form1()
         {
             InitializeComponent();
             portnames = GetPorts();
@@ -38,6 +38,7 @@ namespace RGB_Control
             {
                 comboBox1.Items.Add(COMID);
             }
+            
         }
         public List<string> GetPorts()
         {
@@ -143,7 +144,16 @@ namespace RGB_Control
 
         private void button11_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (serialPort1.IsOpen)
+            {
+                serialPort1.Close();
+                Application.Exit();
+            }
+            else
+            {
+                Application.Exit();
+            }
+
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -289,8 +299,58 @@ namespace RGB_Control
 
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-            monitor = serialPort1.ReadLine();
-            richTextBox1.Invoke((MethodInvoker)(() => richTextBox1.AppendText(monitor + " \r\n")));
+            if (serialPort1.IsOpen)
+            {
+                monitor = serialPort1.ReadLine();
+                richTextBox1.Invoke((MethodInvoker)(() => richTextBox1.AppendText(monitor + " \r\n")));
+            }
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void panel17_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Clear();
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            if (serialPort1.IsOpen)
+            {
+               serialPort1.Write(textBox3.Text.ToString());
+                textBox3.Clear();
+            }
+            else
+            {
+                return;
+            }
+
+        }
+
+        private void textBox3_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                serialPort1.Write(textBox3.Text.ToString());
+                textBox3.Clear();
+            }
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
