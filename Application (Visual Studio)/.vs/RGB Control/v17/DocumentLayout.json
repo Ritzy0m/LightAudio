@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|c:\\users\\samst\\source\\repos\\rgb control\\application\\rgb control\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|solutionrelative:rgb control\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|C:\\Users\\samst\\source\\repos\\RGB Control\\Application\\rgb control\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|solutionrelative:rgb control\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|C:\\Users\\samst\\source\\repos\\RGB Control\\Application\\rgb control\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|solutionrelative:rgb control\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|C:\\Users\\samst\\source\\repos\\RGB Control\\Application\\rgb control\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|solutionrelative:rgb control\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application\\RGB Control\\Form1.cs",
+              "RelativeDocumentMoniker": "RGB Control\\Form1.cs",
+              "ToolTip": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application\\RGB Control\\Form1.cs [Design]",
+              "RelativeToolTip": "RGB Control\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T02:52:23.493Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application\\RGB Control\\Form2.cs",
+              "RelativeDocumentMoniker": "RGB Control\\Form2.cs",
+              "ToolTip": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application\\RGB Control\\Form2.cs",
+              "RelativeToolTip": "RGB Control\\Form2.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAgwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T23:52:00.843Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application\\RGB Control\\Form2.cs",
+              "RelativeDocumentMoniker": "RGB Control\\Form2.cs",
+              "ToolTip": "C:\\Users\\samst\\source\\repos\\RGB Control\\RGB Control\\Form2.cs [Design]",
+              "RelativeToolTip": "..\\RGB Control\\Form2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T23:42:25.289Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application\\RGB Control\\Form1.cs",
+              "RelativeDocumentMoniker": "RGB Control\\Form1.cs",
+              "ToolTip": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application\\RGB Control\\Form1.cs",
+              "RelativeToolTip": "RGB Control\\Form1.cs",
+              "ViewState": "AgIAAAsBAAAAAAAAAAAnwB0BAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T03:01:44.606Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
