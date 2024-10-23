@@ -20,3 +20,4 @@ C:\Users\samst\source\repos\RGB Control\Application (Visual Studio)\RGB Control\
 C:\Users\samst\source\repos\RGB Control\Application (Visual Studio)\RGB Control\obj\Debug\RGB Control.exe
 C:\Users\samst\source\repos\RGB Control\Application (Visual Studio)\RGB Control\obj\Debug\RGB Control.pdb
 C:\Users\samst\source\repos\RGB Control\Application (Visual Studio)\RGB Control\obj\Debug\RGB_Control.form1.resources
+C:\Users\samst\source\repos\RGB Control\Application (Visual Studio)\RGB Control\obj\Debug\RGB_Control.Form3.resources

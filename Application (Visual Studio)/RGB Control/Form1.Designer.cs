@@ -69,7 +69,20 @@
             this.label4 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
             this.LEDPanel = new System.Windows.Forms.Panel();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.button14 = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.panel18 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.LEDTimer = new System.Windows.Forms.Timer(this.components);
             this.panel16 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
@@ -95,6 +108,11 @@
             this.panel10.SuspendLayout();
             this.panel13.SuspendLayout();
             this.LEDPanel.SuspendLayout();
+            this.panel19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.panel20.SuspendLayout();
+            this.panel18.SuspendLayout();
             this.panel17.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -113,6 +131,7 @@
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox1.Size = new System.Drawing.Size(423, 195);
             this.textBox1.TabIndex = 0;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button1
             // 
@@ -569,6 +588,7 @@
             this.comboBox2.Size = new System.Drawing.Size(108, 29);
             this.comboBox2.Sorted = true;
             this.comboBox2.TabIndex = 5;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // panel10
             // 
@@ -619,6 +639,7 @@
             // LEDPanel
             // 
             this.LEDPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.LEDPanel.Controls.Add(this.panel19);
             this.LEDPanel.Controls.Add(this.panel18);
             this.LEDPanel.Location = new System.Drawing.Point(49, 48);
             this.LEDPanel.MaximumSize = new System.Drawing.Size(1225, 622);
@@ -628,13 +649,174 @@
             this.LEDPanel.TabIndex = 9;
             this.LEDPanel.SizeChanged += new System.EventHandler(this.LEDPanel_SizeChanged);
             // 
+            // panel19
+            // 
+            this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
+            this.panel19.Controls.Add(this.numericUpDown2);
+            this.panel19.Controls.Add(this.numericUpDown1);
+            this.panel19.Controls.Add(this.panel20);
+            this.panel19.Controls.Add(this.label12);
+            this.panel19.Controls.Add(this.label11);
+            this.panel19.Controls.Add(this.comboBox3);
+            this.panel19.Controls.Add(this.label9);
+            this.panel19.Controls.Add(this.label10);
+            this.panel19.Controls.Add(this.label8);
+            this.panel19.Controls.Add(this.comboBox5);
+            this.panel19.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.panel19.ForeColor = System.Drawing.Color.White;
+            this.panel19.Location = new System.Drawing.Point(24, 44);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(313, 243);
+            this.panel19.TabIndex = 1;
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Location = new System.Drawing.Point(185, 19);
+            this.numericUpDown2.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(113, 29);
+            this.numericUpDown2.TabIndex = 14;
+            this.numericUpDown2.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(185, 65);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(113, 29);
+            this.numericUpDown1.TabIndex = 13;
+            // 
+            // panel20
+            // 
+            this.panel20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
+            this.panel20.Controls.Add(this.button14);
+            this.panel20.Location = new System.Drawing.Point(55, 190);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(200, 43);
+            this.panel20.TabIndex = 12;
+            // 
+            // button14
+            // 
+            this.button14.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Location = new System.Drawing.Point(-15, -12);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(230, 65);
+            this.button14.TabIndex = 2;
+            this.button14.Text = "Update";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // label12
+            // 
+            this.label12.Location = new System.Drawing.Point(15, 107);
+            this.label12.Margin = new System.Windows.Forms.Padding(15);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(140, 29);
+            this.label12.TabIndex = 11;
+            this.label12.Text = "Chipset Type";
+            // 
+            // label11
+            // 
+            this.label11.Location = new System.Drawing.Point(15, 149);
+            this.label11.Margin = new System.Windows.Forms.Padding(15);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(140, 29);
+            this.label11.TabIndex = 9;
+            this.label11.Text = "RGB Order";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "WS2812B",
+            "WS2801",
+            "WS2811",
+            "WS2812",
+            "WS2813"});
+            this.comboBox3.Location = new System.Drawing.Point(185, 107);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(7);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(113, 29);
+            this.comboBox3.TabIndex = 10;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            // 
+            // label9
+            // 
+            this.label9.Location = new System.Drawing.Point(15, 65);
+            this.label9.Margin = new System.Windows.Forms.Padding(15);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(140, 29);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "LED Pin";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(51, 118);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(14, 21);
+            this.label10.TabIndex = 7;
+            this.label10.Text = " ";
+            // 
+            // label8
+            // 
+            this.label8.Location = new System.Drawing.Point(15, 19);
+            this.label8.Margin = new System.Windows.Forms.Padding(15);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(140, 29);
+            this.label8.TabIndex = 5;
+            this.label8.Text = "Number Of LEDS";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            "RGB",
+            "GRB"});
+            this.comboBox5.Location = new System.Drawing.Point(185, 149);
+            this.comboBox5.Margin = new System.Windows.Forms.Padding(7);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(113, 29);
+            this.comboBox5.TabIndex = 2;
+            this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.comboBox5_SelectedIndexChanged);
+            // 
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
-            this.panel18.Location = new System.Drawing.Point(16, 16);
+            this.panel18.Controls.Add(this.label7);
+            this.panel18.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.panel18.ForeColor = System.Drawing.Color.White;
+            this.panel18.Location = new System.Drawing.Point(26, 11);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(649, 100);
+            this.panel18.Size = new System.Drawing.Size(313, 23);
             this.panel18.TabIndex = 0;
+            this.panel18.Paint += new System.Windows.Forms.PaintEventHandler(this.panel18_Paint);
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
+            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label7.Location = new System.Drawing.Point(0, 0);
+            this.label7.Name = "label7";
+            this.label7.Padding = new System.Windows.Forms.Padding(50);
+            this.label7.Size = new System.Drawing.Size(313, 23);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "LED Configuration";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // LEDTimer
             // 
@@ -771,6 +953,12 @@
             this.panel10.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
             this.LEDPanel.ResumeLayout(false);
+            this.panel19.ResumeLayout(false);
+            this.panel19.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.panel20.ResumeLayout(false);
+            this.panel18.ResumeLayout(false);
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
             this.ResumeLayout(false);
@@ -828,6 +1016,19 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel panel19;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Panel panel20;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
     }
 }
 

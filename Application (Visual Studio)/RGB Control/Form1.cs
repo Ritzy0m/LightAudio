@@ -13,6 +13,8 @@ using System.Reflection;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using System.Runtime.InteropServices;
 using System.Threading;
+using System.Diagnostics.Eventing.Reader;
+using System.Diagnostics;
 
 namespace RGB_Control
 {
@@ -24,6 +26,7 @@ namespace RGB_Control
         bool LEDPanelExpand;
         bool readstate;
         string monitor;
+        string ledUpdate;
 
         public form1()
         {
@@ -301,9 +304,15 @@ namespace RGB_Control
         {
             if (serialPort1.IsOpen)
             {
-                monitor = serialPort1.ReadLine();
-                richTextBox1.Invoke((MethodInvoker)(() => richTextBox1.AppendText(monitor + " \r\n")));
+                richTextBox1.Invoke((MethodInvoker)(() => richTextBox1.AppendText(serialPort1.ReadLine() + " \r\n")));
             }
+            else
+            {
+                serialPort1.Close();
+                return;
+            }
+
+
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -352,5 +361,120 @@ namespace RGB_Control
         {
 
         }
+
+        private void panel18_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox3.SelectedItem.ToString() == "WS2812B")
+            {
+                comboBox5.Text = "GRB";
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            ledUpdate = "U";
+            if (numericUpDown2.Value <= 9)
+            {
+                ledUpdate = ledUpdate + "0" + "0" + numericUpDown2.Value.ToString();
+            }
+            if (numericUpDown2.Value > 9 && numericUpDown2.Value <= 99)
+            {
+                ledUpdate = ledUpdate + "0" + numericUpDown2.Value.ToString();
+            }
+            if (numericUpDown2.Value > 99)
+            {
+                ledUpdate = ledUpdate + numericUpDown2.Value.ToString();
+            }
+            if (numericUpDown1.Value <= 9)
+            {
+                ledUpdate = ledUpdate + "P" + "0" + numericUpDown1.Value.ToString();
+            }
+            if (numericUpDown1.Value <= 99 && numericUpDown1.Value > 9)
+            {
+                ledUpdate = ledUpdate + "P" + numericUpDown1.Value.ToString();
+            }
+            if (comboBox3.Text.Length != 7)
+            {
+                ledUpdate = ledUpdate + "C" + comboBox3.SelectedItem;
+                while (ledUpdate.Length != 15)
+                {
+                    ledUpdate = ledUpdate + "I";
+                }
+            }
+            else
+            {
+                ledUpdate = ledUpdate + "C" + comboBox3.SelectedItem;
+            }
+            if (comboBox5.Text.Length == 3)
+            {
+                ledUpdate = ledUpdate + "O" + comboBox5.SelectedItem.ToString();
+            }
+            else
+            {
+                Form3 form3 = new Form3();
+                form3.Show();
+                return;
+            }
+            if (serialPort1.IsOpen)
+            {
+                serialPort1.Write(ledUpdate);
+            }
+            else
+            {
+                Form3 form3 = new Form3();
+                form3.Show();
+                return;
+            }
+            serialPort1.Write(ledUpdate);
+            Console.WriteLine(ledUpdate);
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_KeyDown(object sender, KeyEventArgs e)
+        {
+           // if ()
+        }
+
+        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
+        {
+            if (numericUpDown2.Value <= 99)
+            {
+               // numericUpDown2.Value = NumericUpDown2();
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
+
 }

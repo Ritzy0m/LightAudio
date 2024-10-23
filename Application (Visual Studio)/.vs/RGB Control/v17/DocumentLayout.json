@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\rgb control\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|c:\\users\\samst\\source\\repos\\rgb control\\application (visual studio)\\rgb control\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|solutionrelative:rgb control\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|c:\\users\\samst\\source\\repos\\rgb control\\application (visual studio)\\rgb control\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\rgb control\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|solutionrelative:rgb control\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\rgb control\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|solutionrelative:rgb control\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\rgb control\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|solutionrelative:rgb control\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\rgb control\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|solutionrelative:rgb control\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\rgb control\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +38,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\RGB Control\\Form1.cs",
               "RelativeDocumentMoniker": "RGB Control\\Form1.cs",
@@ -43,7 +51,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Form2.cs [Design]",
               "DocumentMoniker": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\RGB Control\\Form2.cs",
               "RelativeDocumentMoniker": "RGB Control\\Form2.cs",
@@ -51,8 +59,7 @@
               "RelativeToolTip": "RGB Control\\Form2.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T23:42:25.289Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -62,7 +69,7 @@
               "RelativeDocumentMoniker": "RGB Control\\Form1.cs",
               "ToolTip": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\RGB Control\\Form1.cs",
               "RelativeToolTip": "RGB Control\\Form1.cs",
-              "ViewState": "AgIAAAgBAAAAAAAAAAAcwDABAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAMcBAAAAAAAAAAAAwN4BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T03:01:44.606Z",
               "IsPinned": true,
@@ -70,17 +77,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Form2.cs",
               "DocumentMoniker": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\RGB Control\\Form2.cs",
               "RelativeDocumentMoniker": "RGB Control\\Form2.cs",
               "ToolTip": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\RGB Control\\Form2.cs",
               "RelativeToolTip": "RGB Control\\Form2.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAgwCAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T23:52:00.843Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form3.cs",
+              "DocumentMoniker": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\RGB Control\\Form3.cs",
+              "RelativeDocumentMoniker": "RGB Control\\Form3.cs",
+              "ToolTip": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\RGB Control\\Form3.cs",
+              "RelativeToolTip": "RGB Control\\Form3.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAADwvxoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T23:33:22.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form3.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\RGB Control\\Form3.cs",
+              "RelativeDocumentMoniker": "RGB Control\\Form3.cs",
+              "ToolTip": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\RGB Control\\Form3.cs [Design]",
+              "RelativeToolTip": "RGB Control\\Form3.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T23:31:21.574Z"
             }
           ]
         }

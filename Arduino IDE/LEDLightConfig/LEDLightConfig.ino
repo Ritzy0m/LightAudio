@@ -1,7 +1,17 @@
+//===============================================
+// Libraries used in the program
 #include <FastLED.h> //uses the FastLED library by Daniel Garcia
 
-String data;
+//===============================================
+// Try to not mess with these variables as the are used throughout the code
+String data; //
+int Pin; //
+String chipset; //
+String colorOrder; //
+int numLEDS; 
 char d1;
+
+//===============================================
 
 void setup() {
   Serial.begin(9600); // Start serial set to desired baude rate and in the software you can set it to anything that you need.
@@ -9,21 +19,16 @@ void setup() {
 
 
 }
-
+//Most of my methods are probably very poor and could be improved upon and I will be open to improvements that could be made.
 void loop() {
-  if (Serial.available()) 
+  if (Serial.available())
   {
     data = Serial.readString();
     d1 = data.charAt(0);
-    Serial.println(data);
-    if (d1 == 'a') 
-    {
-      digitalWrite(13, HIGH);
-    }
-    else if (d1 == 'A')
-    {
-      digitalWrite(13, LOW);
+    switch (d1) {
+      case 'U':
+      Serial.println("Yippie");
+      break;
     }
   }
-
 }
