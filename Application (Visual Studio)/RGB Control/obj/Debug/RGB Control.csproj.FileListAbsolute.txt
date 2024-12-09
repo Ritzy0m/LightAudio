@@ -21,3 +21,15 @@ C:\Users\samst\source\repos\RGB Control\Application (Visual Studio)\RGB Control\
 C:\Users\samst\source\repos\RGB Control\Application (Visual Studio)\RGB Control\obj\Debug\RGB Control.pdb
 C:\Users\samst\source\repos\RGB Control\Application (Visual Studio)\RGB Control\obj\Debug\RGB_Control.form1.resources
 C:\Users\samst\source\repos\RGB Control\Application (Visual Studio)\RGB Control\obj\Debug\RGB_Control.Form3.resources
+C:\Users\samst\OneDrive\Documents\GitHub\LightAudio\Application (Visual Studio)\RGB Control\bin\Debug\RGB Control.exe.config
+C:\Users\samst\OneDrive\Documents\GitHub\LightAudio\Application (Visual Studio)\RGB Control\bin\Debug\RGB Control.exe
+C:\Users\samst\OneDrive\Documents\GitHub\LightAudio\Application (Visual Studio)\RGB Control\bin\Debug\RGB Control.pdb
+C:\Users\samst\OneDrive\Documents\GitHub\LightAudio\Application (Visual Studio)\RGB Control\obj\Debug\RGB Control.csproj.AssemblyReference.cache
+C:\Users\samst\OneDrive\Documents\GitHub\LightAudio\Application (Visual Studio)\RGB Control\obj\Debug\RGB_Control.form1.resources
+C:\Users\samst\OneDrive\Documents\GitHub\LightAudio\Application (Visual Studio)\RGB Control\obj\Debug\RGB_Control.Form2.resources
+C:\Users\samst\OneDrive\Documents\GitHub\LightAudio\Application (Visual Studio)\RGB Control\obj\Debug\RGB_Control.Form3.resources
+C:\Users\samst\OneDrive\Documents\GitHub\LightAudio\Application (Visual Studio)\RGB Control\obj\Debug\RGB_Control.Properties.Resources.resources
+C:\Users\samst\OneDrive\Documents\GitHub\LightAudio\Application (Visual Studio)\RGB Control\obj\Debug\RGB Control.csproj.GenerateResource.cache
+C:\Users\samst\OneDrive\Documents\GitHub\LightAudio\Application (Visual Studio)\RGB Control\obj\Debug\RGB Control.csproj.CoreCompileInputs.cache
+C:\Users\samst\OneDrive\Documents\GitHub\LightAudio\Application (Visual Studio)\RGB Control\obj\Debug\RGB Control.exe
+C:\Users\samst\OneDrive\Documents\GitHub\LightAudio\Application (Visual Studio)\RGB Control\obj\Debug\RGB Control.pdb

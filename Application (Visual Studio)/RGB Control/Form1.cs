@@ -15,6 +15,9 @@ using System.Runtime.InteropServices;
 using System.Threading;
 using System.Diagnostics.Eventing.Reader;
 using System.Diagnostics;
+using System.Security.AccessControl;
+using System.Drawing.Text;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace RGB_Control
 {
@@ -27,9 +30,16 @@ namespace RGB_Control
         bool readstate;
         string monitor;
         string ledUpdate;
+        string SelectedCom;
+        private BackgroundWorker backgroundThreading;
 
         public form1()
         {
+            backgroundThreading = new BackgroundWorker();
+            backgroundThreading.WorkerReportsProgress = true;
+            backgroundThreading.DoWork += new DoWorkEventHandler(backgroundThreading_DoWork);
+            backgroundThreading.RunWorkerCompleted += new RunWorkerCompletedEventHandler(backgroundTheading_Complete);
+            backgroundThreading.ProgressChanged += new ProgressChangedEventHandler(backgroundThreading_InProgress);
             InitializeComponent();
             portnames = GetPorts();
 
@@ -132,6 +142,15 @@ namespace RGB_Control
             if (LEDPanelExpand)
             {
                 LEDTimer.Start();
+               
+            }
+            if (sidebar.Width == sidebar.MaximumSize.Width)
+            {
+                MenuTimer.Start();
+            }
+            else
+            {
+                return;
             }
         }
 
@@ -241,11 +260,18 @@ namespace RGB_Control
         private void button5_Click(object sender, EventArgs e)
         {
             LEDTimer.Start();
+            if (sidebar.Width == sidebar.MaximumSize.Width)
+            {
+                MenuTimer.Start();
+            }
+            else
+            {
+                return;
+            }
         }
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-
             if (comboBox1.SelectedItem == null)
             {
                 Form2 openform = new Form2();
@@ -271,8 +297,8 @@ namespace RGB_Control
                     label6.Text = "Connected";
                     serialPort1.PortName = selected;
                     serialPort1.BaudRate = Baude;
-                    serialPort1.Open();
                     readstate = true;
+                    backgroundThreading.RunWorkerAsync();
                 }
             }
         }
@@ -302,17 +328,7 @@ namespace RGB_Control
 
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-            if (serialPort1.IsOpen)
-            {
-                richTextBox1.Invoke((MethodInvoker)(() => richTextBox1.AppendText(serialPort1.ReadLine() + " \r\n")));
-            }
-            else
-            {
-                serialPort1.Close();
-                return;
-            }
-
-
+            //Thread newThread = new Thread(new ThreadStart(SerialThreading)); newThread.Start();
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -352,8 +368,15 @@ namespace RGB_Control
         {
             if (e.KeyCode == Keys.Enter)
             {
-                serialPort1.Write(textBox3.Text.ToString());
-                textBox3.Clear();
+                if (serialPort1.IsOpen)
+                {
+                    serialPort1.Write(textBox3.Text.ToString());
+                    textBox3.Clear();
+                }
+                else
+                {
+                    return;
+                }
             }
         }
 
@@ -386,7 +409,7 @@ namespace RGB_Control
         {
             if (comboBox3.SelectedItem.ToString() == "WS2812B")
             {
-                comboBox5.Text = "GRB";
+                comboBox5.Text = "RGB";
             }
             else
             {
@@ -474,6 +497,85 @@ namespace RGB_Control
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+ 
+        public void backgroundThreading_DoWork(object sender, DoWorkEventArgs e)
+        {
+            serialPort1.Open();
+            if (serialPort1.IsOpen)
+            {
+                while (serialPort1.IsOpen)
+                {
+                    if (serialPort1.IsOpen)
+                    {
+                        //backgroundThreading.ReportProgress();
+                        //richTextBox1.Invoke((MethodInvoker)(() => richTextBox1.AppendText(serialPort1.ReadLine() + " \r\n"))); //need to be changed due to changing UI in thread
+                    }
+                }
+            }
+            else
+            {
+                serialPort1.Close();
+                label6.Text = string.Empty;
+                label6.Text = "Disconnected";
+                return;
+            }
+        }
+
+        public void backgroundTheading_Complete(object sender, RunWorkerCompletedEventArgs e)
+        {
+            Console.WriteLine("Complete");
+            label6.Text = string.Empty;
+            label6.Text = "Disconnected";
+            button9.SendToBack();
+            portnames = GetPorts();
+            textBox1.Clear();
+            comboBox1.Items.Clear();
+            foreach (string port in portnames)
+            {
+                textBox1.AppendText(port + "\r\n");
+
+            }
+            foreach (string COMID in SerialPort.GetPortNames())
+            {
+                comboBox1.Items.Add(COMID);
+            }
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void backgroundThreading_InProgress(object sender, ProgressChangedEventArgs e)
+        {
+            richTextBox1.AppendText(serialPort1.ReadLine() + "\r\n");
+        }
+
+        private void Refresh_Tick(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedItem != null)
+            {
+                SelectedCom = comboBox1.SelectedItem.ToString();
+            }
+            portnames = GetPorts();
+            textBox1.Clear();
+            comboBox1.Items.Clear();
+            foreach (string port in portnames)
+            {
+                textBox1.AppendText(port + "\r\n");
+
+            }
+            foreach (string COMID in SerialPort.GetPortNames())
+            {
+                comboBox1.Items.Add(COMID);
+            }
+            comboBox1.SelectedItem = SelectedCom;
         }
     }
 

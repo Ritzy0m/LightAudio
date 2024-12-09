@@ -16,19 +16,25 @@ char d1;
 void setup() {
   Serial.begin(9600); // Start serial set to desired baude rate and in the software you can set it to anything that you need.
   pinMode(13, OUTPUT);
-
+  While (!Serial) {
+    
+  }
 
 }
 //Most of my methods are probably very poor and could be improved upon and I will be open to improvements that could be made.
-void loop() {
-  if (Serial.available())
-  {
+void SetupCheck() {
     data = Serial.readString();
     d1 = data.charAt(0);
     switch (d1) {
       case 'U':
-      Serial.println("Yippie");
+      
       break;
+
+      case 'P'
     }
-  }
+}
+
+void loop() {
+  if (Serial.available())
+
 }

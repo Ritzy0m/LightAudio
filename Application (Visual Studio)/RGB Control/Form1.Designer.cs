@@ -69,6 +69,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
             this.LEDPanel = new System.Windows.Forms.Panel();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.button15 = new System.Windows.Forms.Button();
             this.panel19 = new System.Windows.Forms.Panel();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
@@ -81,6 +84,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.label18 = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.LEDTimer = new System.Windows.Forms.Timer(this.components);
@@ -91,6 +96,7 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
+            this.Refresh = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.managementInstallerBindingSource)).BeginInit();
@@ -108,10 +114,13 @@
             this.panel10.SuspendLayout();
             this.panel13.SuspendLayout();
             this.LEDPanel.SuspendLayout();
+            this.panel21.SuspendLayout();
+            this.panel22.SuspendLayout();
             this.panel19.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.panel20.SuspendLayout();
+            this.panel23.SuspendLayout();
             this.panel18.SuspendLayout();
             this.panel17.SuspendLayout();
             this.SuspendLayout();
@@ -576,17 +585,28 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
             this.comboBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.ForeColor = System.Drawing.Color.White;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
-            "115200",
-            "9600"});
+            "300",
+            "600",
+            "750",
+            "1200",
+            "2400",
+            "4800",
+            "9600",
+            "19200",
+            "31250",
+            "38400",
+            "57600",
+            "74880",
+            "115200"});
             this.comboBox2.Location = new System.Drawing.Point(119, 77);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(108, 29);
-            this.comboBox2.Sorted = true;
             this.comboBox2.TabIndex = 5;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
@@ -639,7 +659,9 @@
             // LEDPanel
             // 
             this.LEDPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.LEDPanel.Controls.Add(this.panel21);
             this.LEDPanel.Controls.Add(this.panel19);
+            this.LEDPanel.Controls.Add(this.panel23);
             this.LEDPanel.Controls.Add(this.panel18);
             this.LEDPanel.Location = new System.Drawing.Point(49, 48);
             this.LEDPanel.MaximumSize = new System.Drawing.Size(1225, 622);
@@ -648,6 +670,38 @@
             this.LEDPanel.Size = new System.Drawing.Size(10, 622);
             this.LEDPanel.TabIndex = 9;
             this.LEDPanel.SizeChanged += new System.EventHandler(this.LEDPanel_SizeChanged);
+            // 
+            // panel21
+            // 
+            this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
+            this.panel21.Controls.Add(this.panel22);
+            this.panel21.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.panel21.ForeColor = System.Drawing.Color.White;
+            this.panel21.Location = new System.Drawing.Point(350, 44);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(313, 243);
+            this.panel21.TabIndex = 16;
+            // 
+            // panel22
+            // 
+            this.panel22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
+            this.panel22.Controls.Add(this.button15);
+            this.panel22.Location = new System.Drawing.Point(55, 190);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(200, 43);
+            this.panel22.TabIndex = 12;
+            // 
+            // button15
+            // 
+            this.button15.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Location = new System.Drawing.Point(-15, -12);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(230, 65);
+            this.button15.TabIndex = 2;
+            this.button15.Text = "Update";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // panel19
             // 
@@ -790,6 +844,32 @@
             this.comboBox5.TabIndex = 2;
             this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.comboBox5_SelectedIndexChanged);
             // 
+            // panel23
+            // 
+            this.panel23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
+            this.panel23.Controls.Add(this.label18);
+            this.panel23.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.panel23.ForeColor = System.Drawing.Color.White;
+            this.panel23.Location = new System.Drawing.Point(352, 11);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(313, 23);
+            this.panel23.TabIndex = 15;
+            // 
+            // label18
+            // 
+            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
+            this.label18.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label18.Location = new System.Drawing.Point(0, 0);
+            this.label18.Name = "label18";
+            this.label18.Padding = new System.Windows.Forms.Padding(50);
+            this.label18.Size = new System.Drawing.Size(313, 23);
+            this.label18.TabIndex = 0;
+            this.label18.Text = "Simple Color";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
@@ -913,6 +993,11 @@
             this.serialPort1.PortName = "selected";
             this.serialPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.serialPort1_DataReceived);
             // 
+            // Refresh
+            // 
+            this.Refresh.Interval = 2500;
+            this.Refresh.Tick += new System.EventHandler(this.Refresh_Tick);
+            // 
             // form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -953,11 +1038,14 @@
             this.panel10.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
             this.LEDPanel.ResumeLayout(false);
+            this.panel21.ResumeLayout(false);
+            this.panel22.ResumeLayout(false);
             this.panel19.ResumeLayout(false);
             this.panel19.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.panel20.ResumeLayout(false);
+            this.panel23.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
@@ -1029,6 +1117,12 @@
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.Panel panel21;
+        private System.Windows.Forms.Panel panel22;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Panel panel23;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Timer Refresh;
     }
 }
 

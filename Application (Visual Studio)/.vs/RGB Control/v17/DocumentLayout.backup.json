@@ -1,30 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\",
+  "WorkspaceRootPath": "C:\\Users\\samst\\OneDrive\\Documents\\GitHub\\LightAudio\\Application (Visual Studio)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|c:\\users\\samst\\source\\repos\\rgb control\\application (visual studio)\\rgb control\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|c:\\users\\samst\\onedrive\\documents\\github\\lightaudio\\application (visual studio)\\rgb control\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|solutionrelative:rgb control\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\rgb control\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|solutionrelative:rgb control\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\rgb control\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|solutionrelative:rgb control\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\rgb control\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|C:\\Users\\samst\\OneDrive\\Documents\\GitHub\\LightAudio\\Application (Visual Studio)\\rgb control\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|solutionrelative:rgb control\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\rgb control\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|solutionrelative:rgb control\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|C:\\Users\\samst\\OneDrive\\Documents\\GitHub\\LightAudio\\Application (Visual Studio)\\rgb control\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|solutionrelative:rgb control\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\rgb control\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|C:\\Users\\samst\\OneDrive\\Documents\\GitHub\\LightAudio\\Application (Visual Studio)\\rgb control\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|solutionrelative:rgb control\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|C:\\Users\\samst\\OneDrive\\Documents\\GitHub\\LightAudio\\Application (Visual Studio)\\rgb control\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|solutionrelative:rgb control\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|C:\\Users\\samst\\OneDrive\\Documents\\GitHub\\LightAudio\\Application (Visual Studio)\\rgb control\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|solutionrelative:rgb control\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|C:\\Users\\samst\\OneDrive\\Documents\\GitHub\\LightAudio\\Application (Visual Studio)\\rgb control\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|solutionrelative:rgb control\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|C:\\Users\\samst\\OneDrive\\Documents\\GitHub\\LightAudio\\Application (Visual Studio)\\rgb control\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE867ADC-B8F2-4D78-95BC-267F28696DD6}|RGB Control\\RGB Control.csproj|solutionrelative:rgb control\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,10 +48,10 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\RGB Control\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\samst\\OneDrive\\Documents\\GitHub\\LightAudio\\Application (Visual Studio)\\RGB Control\\Form1.cs",
               "RelativeDocumentMoniker": "RGB Control\\Form1.cs",
-              "ToolTip": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\RGB Control\\Form1.cs [Design]",
-              "RelativeToolTip": "RGB Control\\Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\samst\\OneDrive\\Documents\\GitHub\\LightAudio\\Application (Visual Studio)\\RGB Control\\Form1.cs [Design]*",
+              "RelativeToolTip": "RGB Control\\Form1.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T02:52:23.493Z",
               "IsPinned": true,
@@ -51,11 +59,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Form2.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\RGB Control\\Form2.cs",
+              "DocumentMoniker": "C:\\Users\\samst\\OneDrive\\Documents\\GitHub\\LightAudio\\Application (Visual Studio)\\RGB Control\\Form2.cs",
               "RelativeDocumentMoniker": "RGB Control\\Form2.cs",
-              "ToolTip": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\RGB Control\\Form2.cs [Design]",
+              "ToolTip": "C:\\Users\\samst\\OneDrive\\Documents\\GitHub\\LightAudio\\Application (Visual Studio)\\RGB Control\\Form2.cs [Design]",
               "RelativeToolTip": "RGB Control\\Form2.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T23:42:25.289Z",
@@ -65,11 +73,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\RGB Control\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\samst\\OneDrive\\Documents\\GitHub\\LightAudio\\Application (Visual Studio)\\RGB Control\\Form1.cs",
               "RelativeDocumentMoniker": "RGB Control\\Form1.cs",
-              "ToolTip": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\RGB Control\\Form1.cs",
-              "RelativeToolTip": "RGB Control\\Form1.cs",
-              "ViewState": "AgIAAMcBAAAAAAAAAAAAwN4BAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\samst\\OneDrive\\Documents\\GitHub\\LightAudio\\Application (Visual Studio)\\RGB Control\\Form1.cs*",
+              "RelativeToolTip": "RGB Control\\Form1.cs*",
+              "ViewState": "AgIAAOYBAAAAAAAAAAAswP4BAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T03:01:44.606Z",
               "IsPinned": true,
@@ -78,35 +86,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\RGB Control\\Form2.cs",
-              "RelativeDocumentMoniker": "RGB Control\\Form2.cs",
-              "ToolTip": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\RGB Control\\Form2.cs",
-              "RelativeToolTip": "RGB Control\\Form2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAhAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\samst\\OneDrive\\Documents\\GitHub\\LightAudio\\Application (Visual Studio)\\RGB Control\\Program.cs",
+              "RelativeDocumentMoniker": "RGB Control\\Program.cs",
+              "ToolTip": "C:\\Users\\samst\\OneDrive\\Documents\\GitHub\\LightAudio\\Application (Visual Studio)\\RGB Control\\Program.cs",
+              "RelativeToolTip": "RGB Control\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T23:52:00.843Z",
-              "IsPinned": true
+              "WhenOpened": "2024-11-08T23:10:21.469Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\samst\\OneDrive\\Documents\\GitHub\\LightAudio\\Application (Visual Studio)\\RGB Control\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "RGB Control\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\samst\\OneDrive\\Documents\\GitHub\\LightAudio\\Application (Visual Studio)\\RGB Control\\Form1.Designer.cs",
+              "RelativeToolTip": "RGB Control\\Form1.Designer.cs",
+              "ViewState": "AgIAAEEEAAAAAAAAAAAkwGQEAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T14:54:18.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\samst\\OneDrive\\Documents\\GitHub\\LightAudio\\Application (Visual Studio)\\RGB Control\\Form2.cs",
+              "RelativeDocumentMoniker": "RGB Control\\Form2.cs",
+              "ToolTip": "C:\\Users\\samst\\OneDrive\\Documents\\GitHub\\LightAudio\\Application (Visual Studio)\\RGB Control\\Form2.cs",
+              "RelativeToolTip": "RGB Control\\Form2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T14:47:07.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Form3.cs",
-              "DocumentMoniker": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\RGB Control\\Form3.cs",
+              "DocumentMoniker": "C:\\Users\\samst\\OneDrive\\Documents\\GitHub\\LightAudio\\Application (Visual Studio)\\RGB Control\\Form3.cs",
               "RelativeDocumentMoniker": "RGB Control\\Form3.cs",
-              "ToolTip": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\RGB Control\\Form3.cs",
+              "ToolTip": "C:\\Users\\samst\\OneDrive\\Documents\\GitHub\\LightAudio\\Application (Visual Studio)\\RGB Control\\Form3.cs",
               "RelativeToolTip": "RGB Control\\Form3.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAADwvxoAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvxUAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T23:33:22.069Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Form3.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\RGB Control\\Form3.cs",
+              "DocumentMoniker": "C:\\Users\\samst\\OneDrive\\Documents\\GitHub\\LightAudio\\Application (Visual Studio)\\RGB Control\\Form3.cs",
               "RelativeDocumentMoniker": "RGB Control\\Form3.cs",
-              "ToolTip": "C:\\Users\\samst\\source\\repos\\RGB Control\\Application (Visual Studio)\\RGB Control\\Form3.cs [Design]",
+              "ToolTip": "C:\\Users\\samst\\OneDrive\\Documents\\GitHub\\LightAudio\\Application (Visual Studio)\\RGB Control\\Form3.cs [Design]",
               "RelativeToolTip": "RGB Control\\Form3.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T23:31:21.574Z"
